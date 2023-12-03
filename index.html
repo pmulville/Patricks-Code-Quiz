@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz Showdown!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startpage">
+            <h1>This Quiz is designed to help you learn coding terms!!!</h1>
+            <button id="startbtn">Start Quiz</button>
+            <button id="startPageHighScore" onclick="showHighScore()">High Scores!</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">Time Left: </div>
+            <div id="questions"><p>Questions Placeholder</p></div>
+            <button id="a" onclick="checkAnswer('a')">A</button>
+            <button id="b" onclick="checkAnswer('b')">B</button>
+            <button id="c" onclick="checkAnswer('c')">C</button>
+            <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+        </div>
+    <div id="gameover">
+        <div id="finalScore"></div>
+        <input type="text" size = "25" placeholder="Type initials for highscore!!" name="initials" id="initials">
+        <button id="submitScore">Submit Your Score</button>
+    </div>
+    <div id="endGameBtn">
+        <button id="playAgain" onclick="replayQuiz">Play Again!</button>
+        <button id="clearHighscore" onclick="clearscore()">Forget that you Lost</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
